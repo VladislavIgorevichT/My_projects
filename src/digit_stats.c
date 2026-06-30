@@ -1,3 +1,4 @@
+// Reads one integer and prints digit sum, even digit count, max digit, and reversed number.
 #include <stdio.h>
 
 int main(void) {

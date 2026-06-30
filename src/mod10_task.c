@@ -1,3 +1,4 @@
+// Reads one integer and prints its largest digit.
 #include <stdio.h>
 
 int main() {
