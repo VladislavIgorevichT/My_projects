@@ -30,7 +30,7 @@ int main(void) {
         if (max_number < digit) {
             max_number = digit;
         }
-        //reversed
+        // reversed
         reversed = reversed * 10 + digit;
 
         number = number / 10;

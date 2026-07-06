@@ -1,7 +1,7 @@
 // Reads a four-digit number and prints Kaprekar steps until 6174 or an unreachable state.
 #include <stdio.h>
 
-int sort(int *n1, int *n2, int *n3, int *n4) {
+int sort(int* n1, int* n2, int* n3, int* n4) {
     for (int i = 0; i < 4; i++) {
         if (*n1 >= *n2) {
             int temp = *n2;
@@ -22,8 +22,8 @@ int sort(int *n1, int *n2, int *n3, int *n4) {
     return 0;
 }
 
-int digit(int *number, int *n1, int *n2, int *n3, int *n4) {
-     if (*number >= 1000) {
+int digit(int* number, int* n1, int* n2, int* n3, int* n4) {
+    if (*number >= 1000) {
         *n1 = *number % 10;
         *number /= 10;
         *n2 = *number % 10;
@@ -49,7 +49,7 @@ int main(void) {
     int n2 = 0;
     int n3 = 0;
     int n4 = 0;
-    scanf ("%d", &number);
+    scanf("%d", &number);
 
     digit(&number, &n1, &n2, &n3, &n4);
     sort(&n1, &n2, &n3, &n4);

@@ -5,7 +5,7 @@
 // Простое ли число?
 int is_prime(int number) {
     if (number >= 2) {
-        for(int i = 2; i < number; i++) {
+        for (int i = 2; i < number; i++) {
             if (number % i == 0) {
                 return 0;
             }
@@ -24,7 +24,7 @@ int main(void) {
         return 0;
     }
 
-    for(int i = 2; i <= number; i++) {
+    for (int i = 2; i <= number; i++) {
         int degree = 0;
 
         while (number % i == 0) {
