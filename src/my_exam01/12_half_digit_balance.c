@@ -26,7 +26,7 @@ int count_digits(int n) {
 
 int power_of_10(int exponent) {
     int power = 1;
-    for(int i = 1; i <= exponent; i++) {
+    for (int i = 1; i <= exponent; i++) {
         power *= 10;
     }
     return power;
@@ -59,10 +59,9 @@ int is_balanced(int n) {
     return 0;
 }
 
-int main(void)
-{
+int main(void) {
     int n = 0;
-    if (scanf("%d", &n) != 1 || count_digits(n) % 2 != 0 || n <= 0 ) {
+    if (scanf("%d", &n) != 1 || count_digits(n) % 2 != 0 || n <= 0) {
         printf("Invalid input\n");
         return 0;
     }
